@@ -30,7 +30,7 @@ $(document).ready(function() {
     $('#change-link')
         .attr('href', 'https://yandex.kz/')
         .text('Visit Yandex')
-        .css('color', '#e74c3c'); // немного выделим изменённую ссылку
+        .css('color', '#e74c3c');
 });
 
 
@@ -50,7 +50,6 @@ $(document).ready(function() {
     });
 
     $('#animate-combined-btn').click(() => {
-    // Сбрасываем куб в начальное состояние перед анимацией
     $('#animate-box').stop(true, true).css({
         left: '0px',
         top: '0px',
@@ -59,7 +58,6 @@ $(document).ready(function() {
         opacity: 1
     });
 
-    // Теперь запускаем комбинированную анимацию
     $('#animate-box').animate({
         left: '150px',
         top: '150px',

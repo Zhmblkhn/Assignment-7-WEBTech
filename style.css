@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
-    background: #d3d3d3; /* Темнее чем фон задач */
-    text-align: center; /* Центрируем все элементы */
+    background: #d3d3d3; 
+    text-align: center; 
 }
 
 h1, h2 {
@@ -10,7 +10,7 @@ h1, h2 {
 }
 
 section {
-    background: #f4f4f4; /* Светлый фон задач */
+    background: #f4f4f4; 
     padding: 20px;
     margin: 20px auto;
     border-radius: 8px;
@@ -75,18 +75,15 @@ input {
     text-align: center;
 }
 
-/* Добавим границы между задачами, чтобы было видно где заканчивается */
 .task:not(:last-child) {
     border-bottom: 2px solid #ccc;
 }
 
-/* Для всех изображений внутри задач */
 .task img {
-    display: block;       /* Делаем картинку блочной */
-    margin: 0 auto 10px;  /* Центрируем и добавляем небольшой отступ снизу */
+    display: block;       
+    margin: 0 auto 10px;  
 }
 
-/* Кнопки оставляем под картинкой, тоже по центру */
 .task button {
     display: inline-block;
 }
