@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #d3d3d3; /* Темнее чем фон задач */
+    text-align: center; /* Центрируем все элементы */
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+section {
+    background: #f4f4f4; /* Светлый фон задач */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    max-width: 800px;
+}
+
+.task {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+#slide-panel, .accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: #e8f0fe;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#animate-box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    margin: 20px auto;
+    position: relative;
+}
+
+button {
+    margin: 5px;
+    padding: 7px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #2c80b4;
+}
+
+input {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.accordion-header {
+    background: #3498db;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Добавим границы между задачами, чтобы было видно где заканчивается */
+.task:not(:last-child) {
+    border-bottom: 2px solid #ccc;
+}
+
+/* Для всех изображений внутри задач */
+.task img {
+    display: block;       /* Делаем картинку блочной */
+    margin: 0 auto 10px;  /* Центрируем и добавляем небольшой отступ снизу */
+}
+
+/* Кнопки оставляем под картинкой, тоже по центру */
+.task button {
+    display: inline-block;
+}
